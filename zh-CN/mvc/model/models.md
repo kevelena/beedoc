@@ -197,14 +197,14 @@ type User struct {
 }
 ```
 
-#### Comment
+#### description
 
 为字段添加注释
 
 ```go
 type User struct {
 	...
-	Status int `orm:"default(1)" description:"这是状态字段"`
+	Status int `orm:"default(1);description(这是状态字段)"`
 	...
 }
 ```
